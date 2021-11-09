@@ -1,0 +1,24 @@
+<suite name="Test Suite1">
+
+	<test name="TestDemo1">
+		<classes>
+			<class name="com.programs.test.DemoTest" />
+		</classes>
+	</test>
+	
+	<test name="Test ebay search with include and exclude methods">
+		<classes>
+			<class name="com.programs.test.EbaySearch">
+				<methods>
+					<include name="ProductSearch_SoftAssert" />
+				</methods>
+			</class>
+			
+			<class name="com.programs.test.EbayAdvancedSearch">
+				<methods>
+					<exclude name="checkAscendingOrderSort" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

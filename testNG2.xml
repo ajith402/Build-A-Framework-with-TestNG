@@ -1,0 +1,18 @@
+<suite name="Automation Framework">
+	<test name="ebay search with include and exclude methods">
+		<classes>
+			<class name="com.programs.test.EbaySearch">
+				<methods>
+					<include name="ProductSearch_SoftAssert" />
+				</methods>
+			</class>
+
+			<class name="com.programs.test.EbayAdvancedSearch">
+				<methods>
+					<exclude name="EmptyAdvancedSearch" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+</suite>

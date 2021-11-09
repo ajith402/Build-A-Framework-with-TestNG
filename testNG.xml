@@ -1,0 +1,8 @@
+<suite name="Automation Framework">
+	<test name="ebay search">
+		<classes>
+			<class name="com.programs.test.EbaySearch" />
+			<class name="com.programs.test.EbayAdvancedSearch" />
+		</classes>
+	</test>
+</suite>

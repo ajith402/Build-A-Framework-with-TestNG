@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Framework]">
+  <test thread-count="5" name="ebay search(failed)">
+    <classes>
+      <class name="com.programs.test.EbayAdvancedSearch">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkAscendingOrderSort"/>
+          <include name="ebayLogoNavigationToHomePage"/>
+          <include name="setUp"/>
+          <include name="EmptyAdvancedSearch"/>
+        </methods>
+      </class> <!-- com.programs.test.EbayAdvancedSearch -->
+      <class name="com.programs.test.EbaySearch">
+        <methods>
+          <include name="tearDown"/>
+          <include name="afterClassTearDown"/>
+          <include name="EmptySearch"/>
+          <include name="beforeClassSetUp"/>
+          <include name="ProductSearch_SoftAssert"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.programs.test.EbaySearch -->
+    </classes>
+  </test> <!-- ebay search(failed) -->
+</suite> <!-- Failed suite [Automation Framework] -->
