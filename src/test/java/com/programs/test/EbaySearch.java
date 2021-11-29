@@ -13,7 +13,7 @@ public class EbaySearch extends  TestBase{
 
 	String strURL;
 	
-	@Test
+	@Test(groups={"EmptySearch","EbayActions"})
 	public void EmptySearch() throws Exception {
 		
 		strURL="https://ebay.com";
@@ -48,7 +48,7 @@ public class EbaySearch extends  TestBase{
 	}
 
 	
-	@Test
+	@Test(groups={"EbayActions"})
 	public void ProductSearch_SoftAssert() throws Exception {
 		
 		App().Flow().navigateToURL(strURL);

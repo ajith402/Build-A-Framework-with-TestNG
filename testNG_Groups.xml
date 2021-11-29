@@ -1,0 +1,15 @@
+<suite name="Automation Framework">
+
+	<groups>
+		<run>
+			<include name="EbayActions" />
+			
+		</run>
+	</groups>
+	<test name="ebay search">
+		<classes>
+			<class name="com.programs.test.EbaySearch" />
+			<class name="com.programs.test.EbayAdvancedSearch" />
+		</classes>
+	</test>
+</suite>

@@ -12,16 +12,6 @@
           <include name="EmptyAdvancedSearch"/>
         </methods>
       </class> <!-- com.programs.test.EbayAdvancedSearch -->
-      <class name="com.programs.test.EbaySearch">
-        <methods>
-          <include name="tearDown"/>
-          <include name="afterClassTearDown"/>
-          <include name="EmptySearch"/>
-          <include name="beforeClassSetUp"/>
-          <include name="ProductSearch_SoftAssert"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.programs.test.EbaySearch -->
     </classes>
   </test> <!-- ebay search(failed) -->
 </suite> <!-- Failed suite [Automation Framework] -->

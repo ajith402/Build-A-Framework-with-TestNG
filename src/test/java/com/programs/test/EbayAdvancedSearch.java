@@ -18,7 +18,7 @@ public class EbayAdvancedSearch extends TestBase{
 	String strURL;
 	
 		
-	@Test(priority=1)
+	@Test(priority=1, groups={"EmptySearch","EbayActions"})
 	public void EmptyAdvancedSearch() throws Exception {
 
 		
@@ -60,7 +60,7 @@ public class EbayAdvancedSearch extends TestBase{
 	}
 
 	
-	@Test(priority=2)
+	@Test(priority=2, groups= {"EbayActions"})
 	public void ebayLogoNavigationToHomePage() {
 		
 		App().Flow().navigateToURL(strURL);
@@ -92,7 +92,7 @@ public class EbayAdvancedSearch extends TestBase{
 	
 	
 	
-	@Test(priority=3)
+	@Test(priority=3, groups={"EbayActions"})
 	public void checkAscendingOrderSort() {
 		
 		App().Flow().navigateToURL(strURL);

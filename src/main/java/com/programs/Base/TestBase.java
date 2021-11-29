@@ -2,7 +2,9 @@ package com.programs.Base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.programs.lib.AppLib;
@@ -15,7 +17,7 @@ public class TestBase {
 
 	private AppLib appLib;
 
-	@BeforeTest
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 
 		WebDriverManager.chromedriver().setup();
@@ -25,7 +27,7 @@ public class TestBase {
 		// System.out.println("Before Test Method Executed");
 	}
 
-	@AfterTest
+	@AfterMethod (alwaysRun = true)
 	public void tearDown() {
 
 		driver.close();
