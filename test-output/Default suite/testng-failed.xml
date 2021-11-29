@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.programs.test.EbayAdvancedSearch">
+      <class name="com.programs.test.DemoTestDependsUpOn">
         <methods>
-          <include name="checkAscendingOrderSort"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="test4"/>
+          <include name="test1"/>
+          <include name="test3"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.programs.test.EbayAdvancedSearch -->
+      </class> <!-- com.programs.test.DemoTestDependsUpOn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
